@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+# Run from this folder: `pytest`
+testpaths = ["tests"]
+pythonpath = ["."]
+# Declare our custom markers (otherwise pytest warns about unknown marks)
+markers = [
+    "slow: calls a real external service (deselect with -m 'not slow')",
+]
